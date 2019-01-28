@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8616F1E821FF8B410088641D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8616F1E721FF8B410088641D /* main.cpp */; };
+		8616F1F521FF8C010088641D /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8616F1F321FF8C010088641D /* Controller.cpp */; };
+		8616F1F821FF8C210088641D /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8616F1F621FF8C210088641D /* Runner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,10 @@
 
 /* Begin PBXFileReference section */
 		8616F1E421FF8B410088641D /* CPPDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
-		8616F1E721FF8B410088641D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8616F1F321FF8C010088641D /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		8616F1F421FF8C010088641D /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		8616F1F621FF8C210088641D /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		8616F1F921FF912A0088641D /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,44 @@
 		8616F1E621FF8B410088641D /* CPPDataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				8616F1E721FF8B410088641D /* main.cpp */,
+				8616F1F121FF8BA80088641D /* Resources */,
+				8616F1F021FF8B9F0088641D /* Diagram */,
+				8616F1EF21FF8B910088641D /* Controller */,
+				8616F1EE21FF8B860088641D /* Model */,
 			);
 			path = CPPDataStructures;
+			sourceTree = "<group>";
+		};
+		8616F1EE21FF8B860088641D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8616F1F921FF912A0088641D /* Node.hpp */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8616F1EF21FF8B910088641D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8616F1F621FF8C210088641D /* Runner.cpp */,
+				8616F1F321FF8C010088641D /* Controller.cpp */,
+				8616F1F421FF8C010088641D /* Controller.hpp */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8616F1F021FF8B9F0088641D /* Diagram */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Diagram;
+			sourceTree = "<group>";
+		};
+		8616F1F121FF8BA80088641D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8616F1E821FF8B410088641D /* main.cpp in Sources */,
+				8616F1F521FF8C010088641D /* Controller.cpp in Sources */,
+				8616F1F821FF8C210088641D /* Runner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
