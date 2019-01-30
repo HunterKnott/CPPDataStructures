@@ -16,8 +16,8 @@ void Controller :: start()
 
 void Controller :: usingNodes()
 {
-    Node<int> mine(5);
-    Node<string> wordHolder("Words");
+    LinearNode<int> mine(5);
+    LinearNode<string> wordHolder("Words");
     cout << mine.getData() << endl;
     cout << wordHolder.getData() << endl;
     wordHolder.setData("Replace text");

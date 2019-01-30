@@ -35,7 +35,6 @@ Node<Type> :: Node(Type data)
     this -> data = data;
 }
 
-
 template <class Type>
 Type Node<Type> :: getData()
 {
