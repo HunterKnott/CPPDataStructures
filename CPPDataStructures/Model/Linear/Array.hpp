@@ -73,6 +73,8 @@ Array<Type> :: ~Array()//Destructors always have ~, and they're the only thing w
 }
 
 //Operator Overloads
+
+//operator overload
 template <class Type>
 Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
 {
@@ -93,6 +95,7 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
     return *this;
 }
 
+//operator[] overloads
 template <class Type>
 Type & Array<Type> :: operator [] (int index)
 {
