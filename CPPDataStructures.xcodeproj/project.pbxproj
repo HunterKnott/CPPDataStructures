@@ -72,7 +72,8 @@
 		8616F1EE21FF8B860088641D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8616F1F921FF912A0088641D /* Node.hpp */,
+				8684658C220226AF00A0BAE8 /* Nodes */,
+				8684658B220226A100A0BAE8 /* Linear */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +100,21 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8684658B220226A100A0BAE8 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		8684658C220226AF00A0BAE8 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				8616F1F921FF912A0088641D /* Node.hpp */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,16 +295,22 @@
 		8616F1EC21FF8B410088641D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		8616F1ED21FF8B410088641D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
