@@ -40,4 +40,14 @@ public:
     void setAtIndex(int index, Type data);
 }
 
+//Template implementation
+template <class Type>
+Array<Type> :: Array(int size)
+{
+    assert(size > 0);
+    this -> size = size;
+    
+    internalArray = new Type[size];
+}
+
 #endif /* Array_hpp */
