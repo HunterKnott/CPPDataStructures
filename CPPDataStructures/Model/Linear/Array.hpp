@@ -40,7 +40,7 @@ public:
     void setAtIndex(int index, Type data);
 }
 
-//Template implementation
+//Constructor for Array class
 template <class Type>
 Array<Type> :: Array(int size)
 {
@@ -48,6 +48,63 @@ Array<Type> :: Array(int size)
     this -> size = size;
     
     internalArray = new Type[size];
+}
+
+//Copy constructor
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toCopy)
+{
+    this -> size = toCopy.getSize();
+    
+    //Build Data Structures
+    internalArray = new Type[size];
+    
+    for(int index = 0; index < size; index++)
+    {
+        internalArray[index] = toCopy[index];
+    }
+}
+
+//Destructor
+template <class Type>
+Array<Type> :: ~Array()//Destructors always have ~, and they're the only thing with ~
+{
+    delete [] internalArray;
+}
+
+//Operator Overloads
+template <class Type>
+Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
+{
+    if(&toAssign != this)
+    {
+        if(size != toAssign.getSize())
+        {
+            delete [] internalArray;
+            size = toAssign.getSize();
+            internalArray = new Type [size];
+        }
+        
+        for(int index = 0; index < size; index++)
+        {
+            internalArray[index] = toAssign[index];
+        }
+    }
+    return *this;
+}
+
+template <class Type>
+Type & Array<Type> :: operator [] (int index)
+{
+    assert(index >= 0 && index < size);
+    return internalArray[index];
+}
+
+template <class Type>
+Type Array<Type> :: operator [] (int index) const
+{
+    assert(index >= 0 && index < size);
+    return internalArray[index];
 }
 
 #endif /* Array_hpp */
