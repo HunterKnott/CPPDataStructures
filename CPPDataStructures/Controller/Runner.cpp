@@ -10,6 +10,7 @@
 
 int main()
 {
-    Controller app;
-    app.start();
+    Controller * app = new Controller;
+    app -> start();
+    return 0;
 }
