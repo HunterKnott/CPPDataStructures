@@ -14,7 +14,7 @@
 template <class Type>
 class Node
 {
-private:
+protected:
     Type data;
 public:
     Node();
