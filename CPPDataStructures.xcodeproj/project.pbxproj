@@ -47,6 +47,7 @@
 		8686598E220CBB4E00979094 /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		8686598F220CBB4E00979094 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		86865990220CBB4E00979094 /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
+		86865995220CC62C00979094 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +153,7 @@
 			children = (
 				866D8C692204CEB4005AF474 /* List.hpp */,
 				8684658F220239B100A0BAE8 /* Array.hpp */,
+				86865995220CC62C00979094 /* LinkedList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
