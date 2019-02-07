@@ -150,6 +150,7 @@
 		8684658B220226A100A0BAE8 /* Linear */ = {
 			isa = PBXGroup;
 			children = (
+				866D8C692204CEB4005AF474 /* List.hpp */,
 				8684658F220239B100A0BAE8 /* Array.hpp */,
 			);
 			path = Linear;
@@ -160,7 +161,6 @@
 			children = (
 				8616F1F921FF912A0088641D /* Node.hpp */,
 				8684658D220232B000A0BAE8 /* LinearNode.hpp */,
-				866D8C692204CEB4005AF474 /* List.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
