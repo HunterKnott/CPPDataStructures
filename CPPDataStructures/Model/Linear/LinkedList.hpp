@@ -13,7 +13,7 @@ using namespace std;//Used for keyword access. Use this to make sure your pointe
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
-template <class Type>
+template <class Type>//Remember to put this on top of everything
 class LinkedList : public List<Type>
 {
 protected:
@@ -38,6 +38,7 @@ public:
     //bool contains(Type item);
 }
 
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;//These nullptr's are here because there aren't any LinearNodes yet
@@ -45,6 +46,7 @@ LinkedList<Type> :: LinkedList()
     this->size = 0;
 }
 
+template <class Type>
 LinkedList<Type> :: ~LinkedList()//Destructor of data structure
 {
     LinearNode<Type> * destroyStructure = front;
@@ -56,6 +58,7 @@ LinkedList<Type> :: ~LinkedList()//Destructor of data structure
     }
 }
 
+template <class Type>
 void LinkedList<Type> :: add(Type item)//add(Type) method must know the size of the list
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
@@ -74,6 +77,7 @@ void LinkedList<Type> :: add(Type item)//add(Type) method must know the size of 
     this-> size += 1;
 }
 
+template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
     assert(index >= 0 && index <= this->size);
@@ -103,6 +107,24 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
         }
         this->size++;
     }
+}
+
+template <class Type>
+Type LinkedList<Type> :: getFromIndex(int index)//Retrieves values from the list
+{
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current = front;
+    
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
 }
 
 
