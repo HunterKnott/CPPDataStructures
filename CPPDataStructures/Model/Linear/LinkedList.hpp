@@ -56,5 +56,23 @@ LinkedList<Type> :: ~LinkedList()//Destructor of data structure
     }
 }
 
+void LinkedList<Type> :: add(Type item)//add(Type) method must know the size of the list
+{
+    LinearNode<Type> * newData = new LinearNode<Type>(item);
+    
+    if(this->size == 0)
+    {
+        this->front = newData;
+    }
+    else
+    {
+        this->end->setNextNode(newData);
+    }
+    
+    this->end = newData;
+    
+    this-> size += 1;
+}
+
 
 #endif /* LinkedList_h */
