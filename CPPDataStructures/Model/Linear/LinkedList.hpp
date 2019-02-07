@@ -127,5 +127,49 @@ Type LinkedList<Type> :: getFromIndex(int index)//Retrieves values from the list
     return data;
 }
 
+template <class Type>
+Type LinkedList<Type> :: remove(int index)
+{
+    assert(index >= 0 && index < this->size);//The index must be checked for validity for the remove method
+    
+    LinearNode<Type> * current = front;
+    LinearNode<Type> * toBeRemoved = nullptr;
+    LinearNode<Type> * previous = nullptr;
+    
+    Type removedData;
+    
+    if(index == 0)
+    {
+        toBeRemoved = front;
+        this->front = this->front->getNextNode();
+    }
+    else
+    {
+        for(int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current->getNextNode();
+        }
+        
+        toBeRemoved = current;
+        
+        if(index == this->size - 1)
+        {
+            previous->setNextNodes(nullptr);
+            end = previous;
+        }
+        else
+        {
+            current = toBeRemoved->getNextNode();
+            previous->setNextNode(current);
+        }
+    }
+    this->size -= 1;
+    
+    removedData = toBeRemoved->getData();
+    delete toBeRemoved;//Deleates memory allocation for node
+    return removedData;
+}
+
 
 #endif /* LinkedList_h */
