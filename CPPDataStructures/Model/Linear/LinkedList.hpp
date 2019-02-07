@@ -17,13 +17,13 @@ template <class Type>
 class LinkedList : public List<Type>
 {
 protected:
-    LinearNode<Type> * front;
+    LinearNode<Type> * front;//Remember that these are pointers
     LinearNode<Type> * end;
 public:
     //Constructors
-    LinkedList();
+    LinkedList();//This is a prototype
     //Destructor
-    virtual ~LinkedList();//Virtual is here so that it can be overridden
+    virtual ~LinkedList();//Virtual is here so that it can be overridden. This is also a prototype
     //Helper methods
     int getSize() const;
     LinearNode<Type> * getFront();
@@ -36,6 +36,13 @@ public:
     Type remove(int index);
     //Type setAtIndex(int index, Type item);
     //bool contains(Type item);
+}
+
+LinkedList<Type> :: LinkedList()
+{
+    this->front = nullptr;//These nullptr's are here because there aren't any LinearNodes yet
+    this->end = nullptr;
+    this->size = 0;
 }
 
 
