@@ -30,5 +30,11 @@ public:
     Type remove(int index);
 }
 
+template <class Type>
+Stack<Type> :: Stack() : LinkedList<Type>()
+{
+    //Empty
+}
+
 
 #endif /* Stack_h */
