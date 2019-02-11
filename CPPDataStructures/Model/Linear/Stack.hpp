@@ -19,9 +19,9 @@ public:
     ~Stack();//Destructor
     
     //Stack specific methods
-    void push(Type data);
-    Type pop();
-    Type peek();
+    void push(Type data);//push puts a value on the top of the stack
+    Type pop();//pop returns and removes the value on the top of the stack
+    Type peek();//peek gets the top value of the stack without changing anything
     
     //Overriden LinkedList methods
     void add(Type data);
@@ -43,6 +43,24 @@ Stack<Type> :: ~Stack()//Destructor for stack that uses pop method
     {
         pop();
     }
+}
+
+template <class Type>
+void Stack<Type> :: push(Type data)
+{
+    LinearNode<Type> * add = new LinearNode<Type>(data);
+    
+    if(this->size == 0)
+    {
+        this->end = add;
+    }
+    else
+    {
+        add->setNextNode(this->front);
+    }
+    
+    this->front = add;
+    this->size++;
 }
 
 
