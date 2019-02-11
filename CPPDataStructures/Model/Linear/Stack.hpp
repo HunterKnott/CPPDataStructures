@@ -36,5 +36,14 @@ Stack<Type> :: Stack() : LinkedList<Type>()
     //Empty
 }
 
+template <class Type>
+Stack<Type> :: ~Stack()//Destructor for stack that uses pop method
+{
+    while(this->size> 0)
+    {
+        pop();
+    }
+}
+
 
 #endif /* Stack_h */
