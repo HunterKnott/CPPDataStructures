@@ -30,7 +30,7 @@ public:
     LinearNode<Type> * getEnd();
     
     //Structure Methods
-    virtual void add(Type item);
+    virtual void add(Type item);//virtual is here so that we can override these methods in a subclass
     virtual void addAtIndex(int index, Type item);
     virtual Type getFromIndex(int index);
     virtual Type remove(int index);
