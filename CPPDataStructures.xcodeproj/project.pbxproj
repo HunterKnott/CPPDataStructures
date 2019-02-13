@@ -43,9 +43,9 @@
 		8616F1F921FF912A0088641D /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		866541192214AEA900B9BFEE /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		8665411A2214AEA900B9BFEE /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
+		8665411C2214B9C300B9BFEE /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = music.csv; path = ../../../../../Downloads/music.csv; sourceTree = "<group>"; };
 		866D8C692204CEB4005AF474 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		866D8C6B2204DB7E005AF474 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
-		867CB02622120027003B231D /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = music.csv; path = ../../../../../Downloads/music.csv; sourceTree = "<group>"; };
 		867CB02722120D45003B231D /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		867CB02822120D5A003B231D /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		8684658D220232B000A0BAE8 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		8616F1F121FF8BA80088641D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				867CB02622120027003B231D /* music.csv */,
+				8665411C2214B9C300B9BFEE /* music.csv */,
 				8686598F220CBB4E00979094 /* Music.cpp */,
 				86865990220CBB4E00979094 /* Music.hpp */,
 				8605677F220A2451001D0CB0 /* crime.csv */,
