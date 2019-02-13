@@ -38,7 +38,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 
 //Constructor for Array class
 template <class Type>
@@ -112,7 +112,7 @@ Type Array<Type> :: operator [] (int index) const
 
 //Getters
 template <class Type>
-int Array<type> :: getSize() const
+int Array<Type> :: getSize() const
 {
     return size;
 }
