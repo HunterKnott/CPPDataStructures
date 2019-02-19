@@ -48,11 +48,11 @@
 		8684658F220239B100A0BAE8 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		86865990220CBB4E00979094 /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		86865995220CC62C00979094 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
-		869F1EB7221C8AB40054EB43 /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		869F1EB9221C929C0054EB43 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		869F1EBC221C95610054EB43 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		869F1EBE221C95EA0054EB43 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		869F1EC0221C97890054EB43 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		869F1EC1221C98120054EB43 /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +136,11 @@
 		8616F1F121FF8BA80088641D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				869F1EC1221C98120054EB43 /* music.csv */,
 				869F1EC0221C97890054EB43 /* CrimeData.hpp */,
 				869F1EBE221C95EA0054EB43 /* CrimeData.cpp */,
 				869F1EBC221C95610054EB43 /* Music.cpp */,
 				869F1EB9221C929C0054EB43 /* crime.csv */,
-				869F1EB7221C8AB40054EB43 /* music.csv */,
 				86865990220CBB4E00979094 /* Music.hpp */,
 			);
 			path = Resources;
