@@ -28,7 +28,7 @@ public:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
-}
+};
 
 template <class Type>
 Stack<Type> :: Stack() : LinkedList<Type>()
@@ -99,7 +99,7 @@ Type Stack<Type> :: remove(int index)
 }
 
 template <class Type>
-Type Stack<Tyoe> :: peek()
+Type Stack<Type> :: peek()
 {
     assert(this->size > 0);
     return this->getFront()->getData();

@@ -155,7 +155,7 @@ Type LinkedList<Type> :: remove(int index)
         
         if(index == this->size - 1)
         {
-            previous->setNextNodes(nullptr);
+            previous->setNextNode(nullptr);
             end = previous;
         }
         else
