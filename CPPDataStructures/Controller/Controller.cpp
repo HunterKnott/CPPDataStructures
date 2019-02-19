@@ -11,8 +11,8 @@
 void Controller :: start()
 {
     cout << "Hello not world" << endl;
-    usingNodes();
-    testFiles();
+    //usingNodes();
+    testLinear();
 }
 
 void Controller :: usingNodes()
@@ -25,12 +25,14 @@ void Controller :: usingNodes()
     cout << wordHolder.getData() << endl;
 }
 
-void Controller :: testFiles()
+void Controller :: testLinear()
 {
-    vector<CrimeData> badActions = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/CrimeData.cpp");
+    /*vector<CrimeData> badActions = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/CrimeData.cpp");
     vector<Music> tunes = FileController :: musicDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     for(int i = 234; i < 256; i++)
     {
         cout << i << ": contents are: " << badActions[i] << endl;
-    }
+    }*/
+    LinearTester lookieHere;
+    lookieHere.testVsSTL();
 }
