@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		8605676F220A15FD001D0CB0 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8605676D220A15FD001D0CB0 /* Timer.cpp */; };
 		86056772220A19A9001D0CB0 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86056770220A19A9001D0CB0 /* FileController.cpp */; };
-		86056781220A2451001D0CB0 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8605677E220A2451001D0CB0 /* CrimeData.cpp */; };
 		8616F1F521FF8C010088641D /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8616F1F321FF8C010088641D /* Controller.cpp */; };
 		8616F1F821FF8C210088641D /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8616F1F621FF8C210088641D /* Runner.cpp */; };
 		8665411B2214AEA900B9BFEE /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 866541192214AEA900B9BFEE /* LinearTester.cpp */; };
 		869F1EBD221C95610054EB43 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 869F1EBC221C95610054EB43 /* Music.cpp */; };
+		869F1EBF221C95EA0054EB43 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 869F1EBE221C95EA0054EB43 /* CrimeData.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +34,6 @@
 		86056770220A19A9001D0CB0 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		86056771220A19A9001D0CB0 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		8605677D220A2451001D0CB0 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
-		8605677E220A2451001D0CB0 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		8616F1E421FF8B410088641D /* CPPDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		8616F1F321FF8C010088641D /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		8616F1F421FF8C010088641D /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		869F1EB7221C8AB40054EB43 /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		869F1EB9221C929C0054EB43 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		869F1EBC221C95610054EB43 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
+		869F1EBE221C95EA0054EB43 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +136,11 @@
 		8616F1F121FF8BA80088641D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				869F1EBE221C95EA0054EB43 /* CrimeData.cpp */,
 				869F1EBC221C95610054EB43 /* Music.cpp */,
 				869F1EB9221C929C0054EB43 /* crime.csv */,
 				869F1EB7221C8AB40054EB43 /* music.csv */,
 				86865990220CBB4E00979094 /* Music.hpp */,
-				8605677E220A2451001D0CB0 /* CrimeData.cpp */,
 				8605677D220A2451001D0CB0 /* CrimeData.hpp */,
 			);
 			path = Resources;
@@ -241,8 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8605676F220A15FD001D0CB0 /* Timer.cpp in Sources */,
-				86056781220A2451001D0CB0 /* CrimeData.cpp in Sources */,
 				869F1EBD221C95610054EB43 /* Music.cpp in Sources */,
+				869F1EBF221C95EA0054EB43 /* CrimeData.cpp in Sources */,
 				8616F1F521FF8C010088641D /* Controller.cpp in Sources */,
 				8616F1F821FF8C210088641D /* Runner.cpp in Sources */,
 				86056772220A19A9001D0CB0 /* FileController.cpp in Sources */,
