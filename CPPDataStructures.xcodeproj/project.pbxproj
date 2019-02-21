@@ -49,6 +49,7 @@
 		86865990220CBB4E00979094 /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		86865995220CC62C00979094 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		869C1596221F274F00DF3A71 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
+		869C1597221F2FE900DF3A71 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		869F1EB9221C929C0054EB43 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		869F1EBC221C95610054EB43 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		869F1EBE221C95EA0054EB43 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 				86865995220CC62C00979094 /* LinkedList.hpp */,
 				867CB02722120D45003B231D /* Stack.hpp */,
 				867CB02822120D5A003B231D /* Queue.hpp */,
+				869C1597221F2FE900DF3A71 /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
