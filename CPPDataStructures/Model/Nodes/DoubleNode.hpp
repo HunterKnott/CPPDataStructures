@@ -62,4 +62,16 @@ void DoubleNode<Type> :: setPrevious(DoubleNode<Type>* previous)
     this->previous = previous;
 }
 
+template <class Type>
+DoubleNode<Type> * DoubleNode<Type> :: getPrevious()
+{
+    return previous;
+}
+
+template <class Type>
+DoubleNode<Type> * DoubleNode<Type> :: getNext()
+{
+    return next;
+}
+
 #endif /* DoubleNode_hpp */
