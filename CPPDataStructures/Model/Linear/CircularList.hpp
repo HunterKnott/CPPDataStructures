@@ -169,4 +169,20 @@ Type CircularList<Type> :: remove(int index)
     return value;
 }
 
+template <class Type>
+Type CircularList<Type> :: setAtIndex(int index, Type item)
+{
+    assert(index >= 0 && index < size);
+    DoubleNode<Type> * replacedValue = findNode(index);
+    Type replaced = replacedValue->getData();
+    replacedValue->setData(item);
+    return replaced;
+}
+
+template <class Type>
+int CircularList<Type> :: getSize() const
+{
+    return this->size;
+}
+
 #endif /* CircularList_hpp */
