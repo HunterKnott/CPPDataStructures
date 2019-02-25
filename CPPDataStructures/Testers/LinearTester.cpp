@@ -45,6 +45,38 @@ void LinearTester :: testVsSTL()
     crimeTimerSTL.resetTimer();
     musicOOP.resetTimer();
     musicSTL.resetTimer();
+    
+    int randomIndex = rand() % moreCrimes.getSize();
+    
+    crimeTimerSTL.startTimer();
+    crimes[randomIndex];
+    crimeTimerSTL.stopTimer();
+    
+    crimeTimerOOP.startTimer();
+    moreCrimes.getFromIndex(randomIndex);
+    crimeTimerOOP.stopTimer();
+    
+    cout << "This is the STL random retrieval: " << endl;
+    crimeTimerSTL.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    crimeTimerOOP.displayInformation();
+    cout << "A difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerSTL.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    randomIndex = rand() % musicList.getSize();
+    
+    musicSTL.startTimer();
+    tunez[randomIndex];
+    musicSTL.stopTimer();
+    
+    musicOOP.startTimer();
+    musicList.getFromIndex(randomIndex);
+    musicOOP.stopTimer();
+    
+    cout << "This is the STL random retrieval: " << endl;
+    musicSTL.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    musicOOP.displayInformation();
+    cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicSTL.getTimeInMicroseconds() << " microseconds" << endl;
 }
 
 void LinearTester :: testVsStack()
@@ -84,6 +116,38 @@ void LinearTester :: testVsStack()
     crimeTimerStack.resetTimer();
     musicOOP.resetTimer();
     musicStack.resetTimer();
+    
+    int randomIndex = rand() % moreCrimes.getSize();
+    
+    crimeTimerStack.startTimer();
+    crimes[randomIndex];
+    crimeTimerStack.stopTimer();
+    
+    crimeTimerOOP.startTimer();
+    moreCrimes.getFromIndex(randomIndex);
+    crimeTimerOOP.stopTimer();
+    
+    cout << "This is the Stack random retrieval: " << endl;
+    crimeTimerStack.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    crimeTimerOOP.displayInformation();
+    cout << "A difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerStack.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    randomIndex = rand() % musicList.getSize();
+    
+    musicStack.startTimer();
+    tunez[randomIndex];
+    musicStack.stopTimer();
+    
+    musicOOP.startTimer();
+    musicList.getFromIndex(randomIndex);
+    musicOOP.stopTimer();
+    
+    cout << "This is the Stack random retrieval: " << endl;
+    musicStack.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    musicOOP.displayInformation();
+    cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicStack.getTimeInMicroseconds() << " microseconds" << endl;
 }
 
 void LinearTester :: testVsQueue()
@@ -123,6 +187,38 @@ void LinearTester :: testVsQueue()
     crimeTimerQueue.resetTimer();
     musicOOP.resetTimer();
     musicQueue.resetTimer();
+    
+    int randomIndex = rand() % moreCrimes.getSize();
+    
+    crimeTimerQueue.startTimer();
+    crimes[randomIndex];
+    crimeTimerQueue.stopTimer();
+    
+    crimeTimerOOP.startTimer();
+    moreCrimes.getFromIndex(randomIndex);
+    crimeTimerOOP.stopTimer();
+    
+    cout << "This is the Queue random retrieval: " << endl;
+    crimeTimerQueue.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    crimeTimerOOP.displayInformation();
+    cout << "A difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerQueue.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    randomIndex = rand() % musicList.getSize();
+    
+    musicQueue.startTimer();
+    tunez[randomIndex];
+    musicQueue.stopTimer();
+    
+    musicOOP.startTimer();
+    musicList.getFromIndex(randomIndex);
+    musicOOP.stopTimer();
+    
+    cout << "This is the Queue random retrieval: " << endl;
+    musicQueue.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    musicOOP.displayInformation();
+    cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicQueue.getTimeInMicroseconds() << " microseconds" << endl;
 }
 
 void LinearTester :: testVsDouble()
@@ -162,4 +258,36 @@ void LinearTester :: testVsDouble()
     crimeTimerDouble.resetTimer();
     musicOOP.resetTimer();
     musicDouble.resetTimer();
+    
+    int randomIndex = rand() % moreCrimes.getSize();
+    
+    crimeTimerDouble.startTimer();
+    crimes[randomIndex];
+    crimeTimerDouble.stopTimer();
+    
+    crimeTimerOOP.startTimer();
+    moreCrimes.getFromIndex(randomIndex);
+    crimeTimerOOP.stopTimer();
+    
+    cout << "This is the Double random retrieval: " << endl;
+    crimeTimerDouble.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    crimeTimerOOP.displayInformation();
+    cout << "A difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerDouble.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    randomIndex = rand() % musicList.getSize();
+    
+    musicDouble.startTimer();
+    tunez[randomIndex];
+    musicDouble.stopTimer();
+    
+    musicOOP.startTimer();
+    musicList.getFromIndex(randomIndex);
+    musicOOP.stopTimer();
+    
+    cout << "This is the Double random retrieval: " << endl;
+    musicDouble.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    musicOOP.displayInformation();
+    cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicDouble.getTimeInMicroseconds() << " microseconds" << endl;
 }
