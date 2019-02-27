@@ -148,6 +148,8 @@ void LinearTester :: testVsStack()
     cout << "This is the OOP Node random retrieval: " << endl;
     musicOOP.displayInformation();
     cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicStack.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    //Stack<CrimeData> testedCrimesStack = FileController :: readDataToList();
 }
 
 void LinearTester :: testVsQueue()

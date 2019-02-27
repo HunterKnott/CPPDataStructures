@@ -84,6 +84,8 @@ void CircularList<Type> :: add(Type item)
     {
         addedNode = new DoubleNode<Type>(item);
         this->front = addedNode;
+        this->end = addedNode;
+        this->end->setNext(addedNode);
     }
     else
     {
