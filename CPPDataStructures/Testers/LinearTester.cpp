@@ -154,6 +154,11 @@ void LinearTester :: testVsStack()
     {
         testedCrimesStack.push(crimes[i]);
     }
+    
+    /*for(int i = 0; i < testedCrimesStack.getSize; i++)
+    {
+        cout << testedCrimesStack[i];
+    }*/
 }
 
 void LinearTester :: testVsQueue()
@@ -225,6 +230,12 @@ void LinearTester :: testVsQueue()
     cout << "This is the OOP Node random retrieval: " << endl;
     musicOOP.displayInformation();
     cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicQueue.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    Queue<Music> testedMusicQueue;
+    for(int i = 0; i < 10; i++)
+    {
+        testedMusicQueue.enqueue(tunez[i]);
+    }
 }
 
 void LinearTester :: testVsDouble()
