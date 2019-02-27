@@ -149,7 +149,11 @@ void LinearTester :: testVsStack()
     musicOOP.displayInformation();
     cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicStack.getTimeInMicroseconds() << " microseconds" << endl;
     
-    //Stack<CrimeData> testedCrimesStack = FileController :: readDataToList();
+    Stack<CrimeData> testedCrimesStack;
+    for(int i = 0; i < 10; i++)
+    {
+        testedCrimesStack.push(crimes[i]);
+    }
 }
 
 void LinearTester :: testVsQueue()
