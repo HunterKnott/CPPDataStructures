@@ -24,6 +24,7 @@ private:
     void testLinear();
 public:
     void start();
+    void testFiles();
 };
 
 #endif /* Controller_hpp */

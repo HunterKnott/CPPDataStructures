@@ -186,7 +186,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
             vertexNeighbors.insert(index);
         }
     }
-    return vertexNeighbors;s
+    return vertexNeighbors;
 }
 
 //Traversals

@@ -155,10 +155,10 @@ void LinearTester :: testVsStack()
         testedCrimesStack.push(crimes[i]);
     }
     
-    /*for(int i = 0; i < testedCrimesStack.getSize; i++)
+    for(int i = 0; i < testedCrimesStack.getSize(); i++)
     {
-        cout << testedCrimesStack[i];
-    }*/
+        cout << testedCrimesStack.getFromIndex(i);
+    }
 }
 
 void LinearTester :: testVsQueue()

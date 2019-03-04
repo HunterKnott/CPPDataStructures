@@ -36,3 +36,11 @@ void Controller :: testLinear()
     LinearTester lookieHere;
     lookieHere.testVsSTL();
 }
+
+void Controller :: testFiles()
+{
+    for(int i = 234; i < 256; i++)
+    {
+        cout << i << ": contents are: " << i << endl;
+    }
+}
