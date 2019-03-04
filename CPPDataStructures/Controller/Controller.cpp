@@ -10,9 +10,9 @@
 
 void Controller :: start()
 {
-    cout << "Hello not world" << endl;
     //usingNodes();
-    testLinear();
+    //testLinear();
+    testFiles();
 }
 
 void Controller :: usingNodes()
@@ -39,8 +39,9 @@ void Controller :: testLinear()
 
 void Controller :: testFiles()
 {
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     for(int i = 234; i < 256; i++)
     {
-        cout << i << ": contents are: " << i << endl;
+        cout << i << ": contents are: " << crimes[i] << endl;
     }
 }

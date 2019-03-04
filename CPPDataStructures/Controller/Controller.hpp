@@ -22,9 +22,9 @@ class Controller
 private:
     void usingNodes();
     void testLinear();
+    void testFiles();
 public:
     void start();
-    void testFiles();
 };
 
 #endif /* Controller_hpp */
