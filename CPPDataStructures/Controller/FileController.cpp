@@ -233,3 +233,41 @@ stack<Music> FileController :: musicDataToStack(string filename)
     }
     return musicStack;
 }
+
+/*queue<CrimeData> FileController :: readCrimeDataToQueue(string filename)
+{
+    queue<CrimeData> crimeDataQueue;
+    
+    string currentCSVLine;
+    int rowCount = 0;
+    
+    ifstream dataFile(filename);
+    
+    //If the file exists at that path
+    if(dataFile.is_open())
+    {
+        //Keep reading until you are at the end of the file
+        while(!dataFile.eof())
+        {
+            //Grab each line from the CSV separated by the carriage return character
+            getline(dataFile, currentCSVLine, '\n');
+            //Exclude header row
+            if(rowCount != 0)
+            {
+                //Create a CrimeData instance from the line. Exclude a blank line (usually if opened separately)
+                if(currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimeDataQueue.enqueue();
+                }
+            }
+            rowCount++;
+        }
+        dataFile.close();
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    return crimeDataQueue;
+}*/

@@ -19,6 +19,7 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <queue>
 #include <sstream>
 #include <stdio.h>
 
@@ -39,6 +40,9 @@ public:
     
     static stack<CrimeData> readCrimeDataToStack(string filename);
     static stack<Music> musicDataToStack(string filename);
+    
+    static queue<CrimeData> readCrimeDataToQueue(string filename);
+    static queue<Music> musicDataToQueue(string filename);
 };
 
 #endif /* FileController_hpp */
