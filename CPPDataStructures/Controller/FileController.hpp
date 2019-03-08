@@ -18,6 +18,7 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <stack>
 #include <sstream>
 #include <stdio.h>
 
@@ -30,10 +31,14 @@ public:
     static vector<CrimeData> readCrimeDataToVector(string filename);
     static vector<Music> musicDataToVector(string filename);
     //OOP Array
+    static Array<CrimeData> crimeDataToArray(string filename);
     static Array<Music> musicDataToArray(string filename);
     //BST
     static LinkedList<CrimeData> readDataToList(string filename);
     static LinkedList<Music> musicDataToList(string filename);
+    
+    static stack<CrimeData> readCrimeDataToStack(string filename);
+    static stack<Music> musicDataToStack(string filename);
 };
 
 #endif /* FileController_hpp */

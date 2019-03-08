@@ -11,8 +11,8 @@
 void Controller :: start()
 {
     //usingNodes();
-    //testLinear();
-    testFiles();
+    testLinear();
+    //testFiles();
 }
 
 void Controller :: usingNodes()
@@ -27,21 +27,15 @@ void Controller :: usingNodes()
 
 void Controller :: testLinear()
 {
-    /*vector<CrimeData> badActions = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/CrimeData.cpp");
-    vector<Music> tunes = FileController :: musicDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
-    for(int i = 234; i < 256; i++)
-    {
-        cout << i << ": contents are: " << badActions[i] << endl;
-    }*/
     LinearTester lookieHere;
     lookieHere.testVsSTL();
 }
 
 void Controller :: testFiles()
 {
-    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    vector<Music> musicVector = FileController :: musicDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     for(int i = 234; i < 256; i++)
     {
-        cout << i << ": contents are: " << crimes[i] << endl;
+        cout << i << ": contents are: " << musicVector[i] << endl;
     }
 }

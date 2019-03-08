@@ -53,7 +53,7 @@ public:
     void depthFirstTraversal(Graph<Type> & graph, int vertex);
     void breadthFirstTraversal(Graph<Type> & graph, int vertex);
     int costTraversal(Graph<Type> & graph, int vertex);
-}
+};
 
 template <class Type>
 const int Graph<Type> :: MAXIMUM;

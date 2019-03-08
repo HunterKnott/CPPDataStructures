@@ -13,11 +13,11 @@ void LinearTester :: testVsSTL()
     Timer crimeTimerSTL, crimeTimerOOP, musicSTL, musicOOP;
     
     crimeTimerSTL.startTimer();
-    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerSTL.stopTimer();
     
     crimeTimerOOP.startTimer();
-    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
@@ -28,11 +28,11 @@ void LinearTester :: testVsSTL()
     
     
     musicSTL.startTimer();
-    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicSTL.stopTimer();
     
     musicOOP.startTimer();
-    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
@@ -46,6 +46,7 @@ void LinearTester :: testVsSTL()
     musicOOP.resetTimer();
     musicSTL.resetTimer();
     
+    cout << "moreCrimes is: " <<  moreCrimes.getSize();
     int randomIndex = rand() % moreCrimes.getSize();
     
     crimeTimerSTL.startTimer();
@@ -84,11 +85,11 @@ void LinearTester :: testVsStack()
     Timer crimeTimerStack, crimeTimerOOP, musicStack, musicOOP;
     
     crimeTimerStack.startTimer();
-    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerStack.stopTimer();
     
     crimeTimerOOP.startTimer();
-    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
@@ -99,11 +100,11 @@ void LinearTester :: testVsStack()
     
     
     musicStack.startTimer();
-    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicStack.stopTimer();
     
     musicOOP.startTimer();
-    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
@@ -166,11 +167,11 @@ void LinearTester :: testVsQueue()
     Timer crimeTimerQueue, crimeTimerOOP, musicQueue, musicOOP;
     
     crimeTimerQueue.startTimer();
-    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerQueue.stopTimer();
     
     crimeTimerOOP.startTimer();
-    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
@@ -181,11 +182,11 @@ void LinearTester :: testVsQueue()
     
     
     musicQueue.startTimer();
-    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicQueue.stopTimer();
     
     musicOOP.startTimer();
-    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
@@ -243,11 +244,11 @@ void LinearTester :: testVsDouble()
     Timer crimeTimerDouble, crimeTimerOOP, musicDouble, musicOOP;
     
     crimeTimerDouble.startTimer();
-    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerDouble.stopTimer();
     
     crimeTimerOOP.startTimer();
-    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/crime.csv");
     crimeTimerOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
@@ -258,11 +259,11 @@ void LinearTester :: testVsDouble()
     
     
     musicDouble.startTimer();
-    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    vector<Music> tunez = FileController :: musicDataToVector("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicDouble.stopTimer();
     
     musicOOP.startTimer();
-    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/C++Projects/CPPDataStructures/CPPDataStructures/Resources/music.csv");
+    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/hkno9012/Documents/CPPDataStructures/CPPDataStructures/Resources/music.csv");
     musicOOP.stopTimer();
     
     cout << "This is the STL Read time: " << endl;
