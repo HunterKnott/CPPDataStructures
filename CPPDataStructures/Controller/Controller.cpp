@@ -11,8 +11,9 @@
 void Controller :: start()
 {
     //usingNodes();
-    testLinear();
+    //testLinear();
     //testFiles();
+    useLinkedLists();
 }
 
 void Controller :: usingNodes()
@@ -37,5 +38,39 @@ void Controller :: testFiles()
     for(int i = 234; i < 256; i++)
     {
         cout << i << ": contents are: " << musicVector[i] << endl;
+    }
+}
+
+void Controller :: useLinkedLists()
+{
+    LinkedList<int> intList;
+    for(int i = 1; i < 6; i++)
+    {
+        intList.add(i);
+    }
+    
+    for(int i = 0; i < intList.getSize(); i++)
+    {
+        cout << intList.getFromIndex(i) << "";
+    }
+    cout << "\n";
+    
+    vector<string> wordVector = {"This ", "is ", "in ", "a ", "list"};
+    LinkedList <string> stringList;
+    for(int i = 0; i < wordVector.size(); i++)
+    {
+        stringList.add(wordVector[i]);
+    }
+    
+    for(int i = 0; i < stringList.getSize(); i++)
+    {
+        cout << stringList.getFromIndex(i);
+    }
+    cout << "\n";
+    
+    LinkedList<CrimeData> dataList = FileController :: readDataToList("/Users/hkno9012/Documents/BackupCPPDataStructures/CPPDataStructures/Resources/crime.csv");
+    for(int i = 10; i < 20; i++)
+    {
+        cout << dataList.getFromIndex(i);
     }
 }
