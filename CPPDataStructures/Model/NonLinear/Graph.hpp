@@ -12,6 +12,7 @@
 #include <set>
 #include <queue>
 #include <assert.h>
+#include <iostream>
 
 using namespace std;
 template <class Type>
@@ -62,6 +63,12 @@ template <class Type>
 Graph<Type> :: Graph()
 {
     this -> vertexCount = 0;
+    
+    for(int index = 0; index < MAXIMUM; index++)
+    {
+        int * row = weightCostMatrix[index];
+        std::fill_n(row, MAXIMUM, 0);
+    }
 }
 
 //Accessors
@@ -81,7 +88,7 @@ Type& Graph<Type> :: operator[](int vertex)
 
 //Right hand side operator
 template <class Type>
-Type Graph<Type> :: operato [] (int vertex) const
+Type Graph<Type> :: operator[] (int vertex) const
 {
     assert(vertex < vertexCount);
     return graphData[vertex];
@@ -114,7 +121,7 @@ void Graph<Type> :: addEdge(int source, int target)
 template <class Type>
 void Graph<Type> :: addEdgeCost(int source, int target, int cost)
 {
-    assert(source >= 0 && source < vertexCountt && target >= 0 && target < vertexCount);
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     weightCostMatrix[source][target] = cost;
     weightCostMatrix[target][source] = cost;
 }
@@ -154,7 +161,7 @@ void Graph<Type> :: removeEdgeCost(int source, int target)
 template <class Type>
 bool Graph<Type> :: hasUndirectedConnection(int source, int target) const
 {
-    assert(source >= && source < vertexCount && target >= 0 && target < vertexCount);
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     
     bool isAnEdge = false;
     isAnEdge = adjacencyMatrix[source][target] || adjacencyMatrix[target][source];
@@ -163,7 +170,7 @@ bool Graph<Type> :: hasUndirectedConnection(int source, int target) const
 }
 
 template <class Type>
-bool Graph<Type> : areConnected(int source, int target) const
+bool Graph<Type> :: areConnected(int source, int target) const
 {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     
@@ -249,7 +256,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
 
 //Cost accruing (breadth first)
 template <class Type>
-int Graph<Type :: costTraversal(Graph<Type> & currentGraph, int start)
+int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
 {
     assert(start >= 0 && start < vertexCount);
     int cost = 0;
@@ -272,7 +279,7 @@ int Graph<Type :: costTraversal(Graph<Type> & currentGraph, int start)
         {
             if(!visited[*setIterator])
             {
-                cost += wightCostMatrix[currentIndex][*setIterator];
+                cost += weightCostMatrix[currentIndex][*setIterator];
                 visited[*setIterator] = true;
                 vertexQueue.push(*setIterator);
             }

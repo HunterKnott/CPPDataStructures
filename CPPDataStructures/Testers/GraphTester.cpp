@@ -127,3 +127,15 @@ void GraphTester :: setup()
     puzzle.addEdgeCost(13, 15, 88);
     puzzle.addEdgeCost(19, 13, 21);
 }
+
+void GraphTester :: compareTraversals()
+{
+    
+}
+
+void GraphTester :: testGraphs()
+{
+    setup();
+    compareTraversals();
+    findCheapestTraversal();
+}
