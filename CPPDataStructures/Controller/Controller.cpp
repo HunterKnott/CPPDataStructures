@@ -13,7 +13,9 @@ void Controller :: start()
     //usingNodes();
     //testLinear();
     //testFiles();
-    useLinkedLists();
+    //useLinkedLists();
+    GraphTester test;
+    test.testGraphs();
 }
 
 void Controller :: usingNodes()

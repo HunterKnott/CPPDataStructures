@@ -200,9 +200,10 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
-    bool visitedVerticies[MAXIMUM];
+    bool visitedVertices[MAXIMUM];
     assert (vertex < currentGraph.size());
-    std::fill_n(visitedVerticies, currentGraph, vertex, visitedVerticies);
+    std::fill_n(visitedVertices, currentGraph.size(), false);
+    depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
 
 template <class Type>
