@@ -136,6 +136,7 @@ void GraphTester :: compareTraversals()
         puzzle.breadthFirstTraversal(puzzle, i);
         cout << "Depth Index: " << i << endl;
         puzzle.depthFirstTraversal(puzzle, i);
+        cout << endl;
     }
 }
 
