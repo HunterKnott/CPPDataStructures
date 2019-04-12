@@ -32,4 +32,20 @@ public:
     BinaryTreeNode<Type> * getRightChild();
 }
 
+template<class Type>
+BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
+{
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
+}
+
+template<class Type>
+BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
+{
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
+}
+
 #endif /* BinaryTreeNode_hpp */
