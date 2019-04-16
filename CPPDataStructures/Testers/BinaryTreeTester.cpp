@@ -22,4 +22,8 @@ void BinaryTreeTester :: doTreeStuff()
     testTree.insert(11);
     
     testTree.inOrderTraversal();
+    cout << endl;
+    testTree.preOrderTraversal();
+    cout << endl;
+    testTree.postOrderTraversal();
 }

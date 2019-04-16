@@ -100,10 +100,11 @@ void BinarySearchTree<Type> :: preOrderTraversal()
     preOrderTraversal(this->root);
 }
 
+/*Generally used for destroying the tree*/
 template<class Type>
 void BinarySearchTree<Type> :: postOrderTraversal()
 {
-    
+    postOrderTraversal(this->root);
 }
 
 //MARK: Recursive Traversal Helpers
@@ -129,7 +130,16 @@ void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentN
     }
 }
 
-template
+template<class Type>
+void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        postOrderTraversal(currentNode->getLeftChild());
+        postOrderTraversal(currentNode->getRightChild());
+        cout << currentNode->getData() << endl;
+    }
+}
 
 //MARK: Data Operation
 template<class Type>
