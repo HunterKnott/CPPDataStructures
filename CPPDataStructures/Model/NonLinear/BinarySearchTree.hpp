@@ -86,16 +86,18 @@ bool BinarySearchTree<Type> :: isBalanced()
 }
 
 //MARK: Traversals
+/*Generally used to retrieve data in logical order*/
 template<class Type>
 void BinarySearchTree<Type> :: inOrderTraversal()
 {
     inOrderTraversal(this->root);
 }
 
+/*Generally used to process math equations and exporting a tree to another data structure*/
 template<class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
-    
+    preOrderTraversal(this->root);
 }
 
 template<class Type>
@@ -115,6 +117,19 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * currentNo
         inOrderTraversal(currentNode->getRightChild());
     }
 }
+
+template<class Type>
+void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        cout << currentNode->getData() << endl;
+        preOrderTraversal(currentNode->getLeftChild());
+        preOrderTraversal(currentNode->getRightChild());
+    }
+}
+
+template
 
 //MARK: Data Operation
 template<class Type>
