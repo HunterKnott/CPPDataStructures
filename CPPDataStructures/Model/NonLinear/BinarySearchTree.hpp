@@ -89,7 +89,7 @@ bool BinarySearchTree<Type> :: isBalanced()
 template<class Type>
 void BinarySearchTree<Type> :: inOrderTraversal()
 {
-    
+    inOrderTraversal(this->root);
 }
 
 template<class Type>
@@ -102,6 +102,18 @@ template<class Type>
 void BinarySearchTree<Type> :: postOrderTraversal()
 {
     
+}
+
+//MARK: Recursive Traversal Helpers
+template<class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        inOrderTraversal(currentNode->getLeftChild());
+        cout << currentNode->getData() << endl;
+        inOrderTraversal(currentNode->getRightChild());
+    }
 }
 
 //MARK: Data Operation
