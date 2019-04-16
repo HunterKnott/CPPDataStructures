@@ -58,6 +58,31 @@ public:
     
     Type findMinimum();
     Type findMaximum();
+};
+
+//MARK: Information Methods
+template<class Type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return -1;
+}
+
+template<class Type>
+int BinarySearchTree<Type> :: getSize()
+{
+    return -1;
+}
+
+template<class Type>
+bool BinarySearchTree<Type> :: isComplete()
+{
+    return false;
+}
+
+template<class Type>
+bool BinarySearchTree<Type> :: isBalanced()
+{
+    return false;
 }
 
 #endif /* BinarySearchTree_hpp */
