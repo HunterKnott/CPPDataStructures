@@ -25,12 +25,12 @@ public:
     
     void setRootNode(BinaryTreeNode<Type> * root);
     void setLeftChild(BinaryTreeNode<Type> * right);
-    void setLeftChild(BinaryTreeNode<Type> * left);
+    void setRightChild(BinaryTreeNode<Type> * left);
     
     BinaryTreeNode<Type> * getRootNode();
     BinaryTreeNode<Type> * getLeftChild();
     BinaryTreeNode<Type> * getRightChild();
-}
+};
 
 /*Constructors*/
 template<class Type>

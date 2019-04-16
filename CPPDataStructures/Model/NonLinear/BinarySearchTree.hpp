@@ -60,6 +60,12 @@ public:
     Type findMaximum();
 };
 
+template<class Type>
+BinarySearchTree<Type> :: BinarySearchTree()
+{
+    
+}
+
 //MARK: Information Methods
 template<class Type>
 int BinarySearchTree<Type> :: getHeight()
