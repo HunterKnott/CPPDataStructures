@@ -30,8 +30,8 @@ protected:
     
     void destroyTree(BinaryTreeNode<Type> * node);
     
-    BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
+    BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     
     void removeNode(BinaryTreeNode<Type> * removeMe);
     
@@ -347,7 +347,13 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
     }
 }
 
-template <class Type>
+template<class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
+{
+    
+}
+
+template<class Type>
 void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
     BinaryTreeNode<Type> * current;
