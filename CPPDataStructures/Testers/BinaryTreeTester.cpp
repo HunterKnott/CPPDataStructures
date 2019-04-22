@@ -10,20 +10,37 @@
 
 void BinaryTreeTester :: doTreeStuff()
 {
-    testTree.insert(863);
-    testTree.insert(8);
-    testTree.insert(44);
-    testTree.insert(90);
-    testTree.insert(852);
-    testTree.insert(2);
-    testTree.insert(654);
-    testTree.insert(247);
-    testTree.insert(98);
-    testTree.insert(11);
+    intTestTree.insert(863);
+    intTestTree.insert(8);
+    intTestTree.insert(44);
+    intTestTree.insert(90);
+    intTestTree.insert(852);
+    intTestTree.insert(2);
+    intTestTree.insert(654);
+    intTestTree.insert(247);
+    intTestTree.insert(98);
+    intTestTree.insert(11);
     
-    testTree.inOrderTraversal();
+    intTestTree.inOrderTraversal();
     cout << endl;
-    testTree.preOrderTraversal();
+    intTestTree.preOrderTraversal();
     cout << endl;
-    testTree.postOrderTraversal();
+    intTestTree.postOrderTraversal();
+    cout << endl;
+    
+    stringTestTree.insert("Do");
+    stringTestTree.insert("or");
+    stringTestTree.insert("do");
+    stringTestTree.insert("not");
+    stringTestTree.insert("there");
+    stringTestTree.insert("is");
+    stringTestTree.insert("no");
+    stringTestTree.insert("try");
+    
+    stringTestTree.inOrderTraversal();
+    cout << endl;
+    stringTestTree.preOrderTraversal();
+    cout << endl;
+    stringTestTree.postOrderTraversal();
+    cout << endl;
 }
