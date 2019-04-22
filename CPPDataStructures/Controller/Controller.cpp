@@ -14,8 +14,10 @@ void Controller :: start()
     //testLinear();
     //testFiles();
     //useLinkedLists();
-    GraphTester test;
-    test.testGraphs();
+    //GraphTester test;
+    //test.testGraphs();
+    BinaryTreeTester treeTest;
+    treeTest.doTreeStuff();
 }
 
 void Controller :: usingNodes()
