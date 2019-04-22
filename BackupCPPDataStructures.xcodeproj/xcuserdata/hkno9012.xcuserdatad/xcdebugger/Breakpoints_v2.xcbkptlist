@@ -35,5 +35,83 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CPPDataStructures/Testers/../Model/Nodes/Node.hpp"
+            timestampString = "577653672.409412"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "getData()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Node&lt;int&gt;::getData()"
+                  moduleName = "BackupCPPDataStructures"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkno9012/Documents/BackupCPPDataStructures/CPPDataStructures/Testers/../Model/Nodes/Node.hpp"
+                  timestampString = "577653672.71676"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::getData()"
+                  moduleName = "BackupCPPDataStructures"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkno9012/Documents/BackupCPPDataStructures/CPPDataStructures/Controller/../Model/Nodes/Node.hpp"
+                  timestampString = "577653672.719178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Node&lt;CrimeData&gt;::getData()"
+                  moduleName = "BackupCPPDataStructures"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkno9012/Documents/BackupCPPDataStructures/CPPDataStructures/Controller/../Model/Nodes/Node.hpp"
+                  timestampString = "577653672.7209719"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Node&lt;Music&gt;::getData()"
+                  moduleName = "BackupCPPDataStructures"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkno9012/Documents/BackupCPPDataStructures/CPPDataStructures/Controller/../Model/Linear/../Nodes/Node.hpp"
+                  timestampString = "577653672.722564"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

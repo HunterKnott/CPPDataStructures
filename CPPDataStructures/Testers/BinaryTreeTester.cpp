@@ -10,7 +10,7 @@
 
 void BinaryTreeTester :: doTreeStuff()
 {
-    testTree.insert(654);
+    testTree.insert(863);
     testTree.insert(8);
     testTree.insert(44);
     testTree.insert(90);
