@@ -66,6 +66,23 @@ BinarySearchTree<Type> :: BinarySearchTree()
     
 }
 
+template<class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    destroyTree(this->root);
+}
+
+template<class Type>
+void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
+{
+    if(node != nullptr)
+    {
+        destroyTree(node->getLeftNode());
+        destroyTree(node->getRightNode());
+        delete node;
+    }
+}
+
 //MARK: Information Methods
 template<class Type>
 int BinarySearchTree<Type> :: getHeight()
