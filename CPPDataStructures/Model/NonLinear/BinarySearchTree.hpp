@@ -11,6 +11,7 @@
 
 #include "Tree.hpp"
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -24,7 +25,7 @@ protected:
     bool isBalanced(BinaryTreeNode<Type> * startNode);
     bool isComplete(BinaryTreeNode<Type> * startNode, int index, int size);
     
-    void inOrderedTraversal(BinaryTreeNode<Type> * inStart);
+    void inOrderTraversal(BinaryTreeNode<Type> * inStart);
     void preOrderTraversal(BinaryTreeNode<Type> * preStart);
     void postOrderTraversal(BinaryTreeNode<Type> * postStart);
     
