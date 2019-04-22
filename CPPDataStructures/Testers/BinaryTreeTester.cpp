@@ -28,6 +28,10 @@ void BinaryTreeTester :: doTreeStuff()
     intTestTree.postOrderTraversal();
     cout << endl;
     
+    cout << "Height: " << intTestTree.getHeight() << endl;
+    cout << intTestTree.isBalanced() << endl;
+    cout << intTestTree.isComplete() << endl << endl;
+    
     stringTestTree.insert("Do");
     stringTestTree.insert("or");
     stringTestTree.insert("do");
@@ -43,4 +47,8 @@ void BinaryTreeTester :: doTreeStuff()
     cout << endl;
     stringTestTree.postOrderTraversal();
     cout << endl;
+    
+    cout << "Height: " << stringTestTree.getHeight() << endl;
+    cout << stringTestTree.isBalanced() << endl;
+    cout << stringTestTree.isComplete() << endl << endl;
 }
