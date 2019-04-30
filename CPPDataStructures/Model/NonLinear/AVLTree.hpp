@@ -125,4 +125,14 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
     return balanceSubTree(parent);
 }
 
+template<class Type>
+int AVLTree<Type> :: heightDifference(BinaryTreeNode<Type> * node)
+{
+    int balance;
+    int leftHeight = this->calculateHeight(node->getLeftChild());
+    int rightHeight = this->calculateHeight(node->getRightChild());
+    balance = leftHeight - rightHeight;
+    return balance;
+}
+
 #endif /* AVLTree_hpp */
