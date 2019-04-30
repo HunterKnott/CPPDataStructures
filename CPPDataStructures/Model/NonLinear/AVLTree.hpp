@@ -34,4 +34,22 @@ public:
     void remove(Type value);
 };
 
+template<class Type>
+AVLTree<Type> :: AVLTree() : BinarySearchTree<Type>()
+{
+    this->root = nullptr;
+}
+
+template<class Type>
+void AVLTree<Type> :: insert(Type item)
+{
+    insertNode(this->getRoot(), item);
+}
+
+template<class Type>
+void AVLTree<Type> :: remove(Type item)
+{
+    removeNode(this->getRoot, item);
+}
+
 #endif /* AVLTree_hpp */
